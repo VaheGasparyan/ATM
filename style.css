@@ -1,0 +1,56 @@
+/* 
+class CardService{
+    static Cards = [];
+
+    static addCard(card){
+        CardService.checkCardExistence(card)
+        // .then(result => {
+        //     if(!result) {
+        //         CardService.Cards.push(card);  
+        //     }
+        // });
+    }
+
+    static removeCard(card){
+        console.log(this.cards[0]);
+    }
+
+    static addIfNotExist(checkCard) {
+        return new Promise((res, rej) => {
+            const isExistCard = CardService.Cards.some((card) => card.number === checkCard.number);
+            if(!isExistCard) {
+                CardService.Cards.push(checkCard);  
+            }
+        })
+    }
+
+    static async checkCardExistence(checkCard){
+        return await CardService.addIfNotExist(checkCard);
+    }
+
+    static async addMoney(cardNumber, moneyAmount){
+
+    }
+
+
+    static async removeMoney(card, amount){
+
+    }
+
+    static async transferFromTo(card, toCardNumber, amount){
+
+        // the transactions need to be safe
+
+        // calls removeMoney and addMoney methods accordingly
+
+    }
+}
+
+// (async () => {
+//     await CardService.addCard(card);
+//     await CardService.addCard(card);
+//     console.log(CardService.cards)
+// })()
+CardService.addCard(card)
+CardService.addCard(card)
+console.log(CardService.Cards) */
